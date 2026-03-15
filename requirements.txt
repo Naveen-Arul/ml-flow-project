@@ -1,0 +1,12 @@
+mlflow
+fastapi
+uvicorn
+streamlit
+python-multipart
+pydantic
+scikit-learn
+joblib
+nltk
+numpy<2
+requests
+gunicorn

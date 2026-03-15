@@ -2,13 +2,15 @@ import streamlit as st
 import requests
 import json
 
+import os
+
 st.set_page_config(page_title="News Classifier", page_icon="📰")
 
 st.title("📰 News Article Classifier")
 st.markdown("Classify news articles into 20 different categories using machine learning models.")
 
-# Backend URL
-BACKEND_URL = "http://localhost:8000"
+# Backend URL (Use environment variable for production, fallback to local)
+BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 
 # Sidebar for model selection
 st.sidebar.header("Configuration")
