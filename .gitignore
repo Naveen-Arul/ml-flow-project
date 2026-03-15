@@ -123,10 +123,9 @@ venv.bak/
 mlruns/
 mlartifacts/
 
-# Local Model Files (Usually kept out of git if they are large)
-models/*.pkl
-models/*.joblib
-!models/metadata.pkl
+# Local Model Files
+# models/*.pkl - REMOVED SO MODELS ARE PUSHED TO GIT
+#!models/metadata.pkl
 
 # VS Code
 .vscode/
