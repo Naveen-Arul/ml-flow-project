@@ -1,1 +1,1 @@
-web: streamlit run frontend.py --server.port \ --server.address 0.0.0.0
+web: gunicorn -w 1 -k uvicorn.workers.UvicornWorker backend:app --bind 0.0.0.0:\
